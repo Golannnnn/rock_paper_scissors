@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+//user input
+let playerInput = prompt("Rock, paper or scissors?");
+
+//changing the input to only lower case letters
+let playerSelection = playerInput.toLowerCase();
+
+console.log(`You played: ${playerSelection}`);
+
+
+//random computer output
+function computerPlay() {
+    let selection = ['rock', 'paper', 'scissors']
+    return selection[Math.floor(Math.random() * selection.length)]
+}
+
+//declaring the function to a value
+const computerSelection = computerPlay();
+console.log(`The computer played: ${computerSelection}`);
+
+//round function
+function playRound(playerSelection, computerSelection) {
+
+    let playerScore = 0;
+    let compScore = 0;
+
+    if (playerSelection == 'rock' && computerSelection == 'scissors' ||
+        playerSelection == 'paper' && computerSelection == 'rock' ||
+        playerSelection == 'scissors' && computerSelection == 'paper') {
+        playerScore = ++playerScore;
+        console.log(`You won! ${playerSelection} beats ${computerSelection}`);
+    } else if (playerSelection == computerSelection) {
+        console.log(`It is a tie`);
+    } else {
+        compScore = ++compScore;
+        console.log(`You lose. ${computerSelection} beats ${playerSelection}`);
+    }
+
+    console.log(`First game finished. You have ${playerScore} points and the computer has ${compScore} points.`);
+}
+
+//calling the round function
+playRound(playerSelection, computerSelection);
+</script>
+</html>
