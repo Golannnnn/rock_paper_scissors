@@ -1,0 +1,32 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffefde;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    align-self: center;
+    justify-self: center;
+    margin: 50px 0px 50px 0px;
+}
+
+button {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 30px;
+    padding: 10px 20px 10px 20px;
+}
+
+#roundText {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
