@@ -1,5 +1,6 @@
 # rock_paper_scissors
-My third project as part of 'The Odin Project' curriculum. Here is the live preview: https://golannnnn.github.io/rock_paper_scissors/
+My third project as part of 'The Odin Project' curriculum. 
+Here is the live preview: https://golannnnn.github.io/rock_paper_scissors/
 
 What I learned, used and improved:
 - basic javascript
