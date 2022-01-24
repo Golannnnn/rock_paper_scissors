@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset='UTF-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Rock, paper or scissors</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="buttons">
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissors">Scissors</button>
-        </div>
-        <div id="roundText">
+    <main>
+        <header>
+            <h1>Let's play!</h1>
+        </header>
+        <section id="buttons">
+            <button type="button" id='rockButton' onclick='buttonChoice(this)' value='Rock'>Rock</button>
+            <button type="button" id='paperButton' onclick='buttonChoice(this)' value='Paper'>Paper</button>
+            <button type="button" id='scissorsButton' onclick='buttonChoice(this)' value='Scissors'>Scissors</button>
+        </section>
+        <section id="gameOutput">
             <p id="selection"></p>
             <p id="result"></p>
-            <p id="score"></p>
-        </div>
-    </div>
-    <script src="javascript.js" defer></script>
+            <p id="endResult"></p>
+            <p id="playerScoreText"></p>
+            <p id="compScoreText"></p>
+        </section>
+    </main>
+    <script src="index.js" defer></script>
 </body>
 </html>
